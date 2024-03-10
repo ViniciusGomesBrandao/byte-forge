@@ -3,25 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
-import { HomeComponent } from './home/home.component';
-import { TauriService } from '../core/services';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { InitComponent } from './init/init.component';
+import { UiTerminalComponent } from '../_components/ui-terminal/ui-terminal.component';
+import { DraggModule } from '../_directives/dragg/dragg.module';
 
 
 @NgModule({
   declarations: [
     PagesComponent,
-    HomeComponent
+    InitComponent
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
     PagesRoutingModule,
-  ],
-  providers: [
-    TauriService
+    UiTerminalComponent,
+    DraggModule
   ]
 })
 export class PagesModule { }

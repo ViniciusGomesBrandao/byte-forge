@@ -26,6 +26,7 @@ fn exec_command(command: &str) -> String {
     };
 
     let hello = String::from_utf8_lossy(&output.stdout).to_string();
+    println!("{}", hello);
     return hello;
 }
 

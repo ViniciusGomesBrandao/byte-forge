@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: "./pages.component.html",
-
+  selector: 'app-pages',
+  templateUrl: './pages.component.html',
+  styleUrl: './pages.component.scss'
 })
 export class PagesComponent {
 
