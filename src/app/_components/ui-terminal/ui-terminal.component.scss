@@ -1,5 +1,5 @@
 .terminal {
-    width: 600px;
+    width: 800px;
     height: 400px;
     position: absolute;
     padding-left: 0.5rem;
@@ -17,6 +17,11 @@
 
         .result-line {
             white-space: pre-wrap; // Isso permite que as quebras de linha sejam exibidas corretamente
+            display: flex;
+
+            *{
+                margin: 0px !important;
+            }
         }
     }
 
@@ -29,4 +34,8 @@
     input:focus {
         outline: none;
     }
+}
+
+dir{
+    margin: 0 !important;
 }

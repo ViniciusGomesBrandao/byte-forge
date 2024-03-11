@@ -1,9 +1,9 @@
-<div class="border rounded-lg terminal" dragg>
+<div (click)="setFocus()" class="border rounded-lg terminal" dragg>
     <div class="grid grid-cols-1 w-full result-terminal" #resultContainer>
-        <div *ngFor="let result of commandResults" class="result-line" [innerHTML]="result.replaceAll('\n', '<br>')"></div>
+        <div *ngFor="let result of commandResults" class="result-line" [innerHTML]="result"></div>
     </div>
     <div class="flex items-center">
         <div class="flex-none mr-2 icon">{{icon}}</div>
-        <input [(ngModel)]="command" (keyup.enter)="newCommand()" class="w-full flex-grow" type="text">
+        <input #inputCommand [(ngModel)]="command" (keyup.enter)="newCommand()" class="w-full flex-grow" type="text">
     </div>
 </div>
