@@ -9,7 +9,7 @@ export class DraggDirective {
 
   @HostListener('mousedown', ['$event'])
   onMouseDown(event: MouseEvent) {
-    if (event.shiftKey) {
+    if (event.ctrlKey) {
       event.preventDefault();
       this.isDragging = true;
       this.renderer.addClass(this.el.nativeElement, 'dragging');

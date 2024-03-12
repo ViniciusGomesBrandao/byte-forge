@@ -2,4 +2,13 @@
     position: absolute;
     width: 600px;
     height: 300px;
+    input{
+        background-color: transparent;
+        color: var(--control-color);
+        font-size: 10px;
+        height: 14px;
+        &:focus{
+            outline: none;
+        }
+    }
 }

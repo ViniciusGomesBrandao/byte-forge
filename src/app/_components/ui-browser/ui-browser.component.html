@@ -1,3 +1,4 @@
-<div class="browser rounded-lg border" dragg>
-
+<div class="flex flex-col browser rounded-lg border" dragg>
+    <iframe [src]="link" class="w-full grow" frameborder="0" allowfullscreen></iframe>
+    <input [(ngModel)]="linkUrl" (keyup.enter)="updateLink()" class="w-full mr-1 ml-1" type="text">
 </div>
