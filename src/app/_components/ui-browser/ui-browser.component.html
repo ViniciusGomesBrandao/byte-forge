@@ -1,4 +1,12 @@
-<div class="flex flex-col browser rounded-lg border" dragg>
-    <iframe [src]="link" class="w-full grow" frameborder="0" allowfullscreen></iframe>
-    <input [(ngModel)]="linkUrl" (keyup.enter)="updateLink()" class="w-full mr-1 ml-1" type="text">
-</div>
+<hlm-dialog>
+    <button brnDialogTrigger hlmBtn>Edit Profile</button>
+    <hlm-dialog-content *brnDialogContent="let ctx">
+        <hlm-dialog-header>
+            <h3 brnDialogTitle hlm>Edit profile</h3>
+            <p brnDialogDescription hlm>Make changes to your profile here. Click save when you're done.</p>
+        </hlm-dialog-header>
+        <hlm-dialog-footer>
+            <button hlmBtn type="submit">Save changes</button>
+        </hlm-dialog-footer>
+    </hlm-dialog-content>
+    </hlm-dialog>
