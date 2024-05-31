@@ -1,18 +1,10 @@
-[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/tauri.svg" width="50">
 
-![Maintained][maintained-badge]
-[![Make a pull request][prs-badge]][prs]
-[![License][license-badge]](LICENSE.md)
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
-[![Build][tauri-build-badge]][tauri-build]
-
-[![Watch on GitHub][github-watch-badge]][github-watch]
-[![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
 
 # Introduction
 
-Bootstrap and package your project with Angular 16 (Typescript + SASS + Hot Reload) and Tauri (Rust) for creating Desktop applications.
+Byte Forge is a modern hacking and bug enumeration application.
 
 Currently runs with:
 
@@ -27,45 +19,24 @@ With this sample, you can:
 
 /!\ Angular CLI needs Node 16 or later to work correctly.
 
+
+
 ## Getting Started
 
-*Clone this repository locally:*
 
-``` bash
-git clone https://github.com/maximegris/angular-tauri.git
-```
 
 *Install Tauri (Rust)*
 
 https://tauri.studio/docs/getting-started/prerequisites
 
-*Install dependencies with npm:*
+*Clone this repository locally:*
 
-``` bash
-npm install
+```bash
+  git clone https://github.com/ViniciusGomesBrandao/byte-forge.git
+  cd byte-forge
+  npm install
 ```
 
-If you want to generate Angular components with Angular-cli , you **MUST** install `@angular/cli` in npm global context.
-Please follow [Angular-cli documentation](https://github.com/angular/angular-cli) if you had installed a previous version of `angular-cli`.
-
-``` bash
-npm install -g @angular/cli
-```
-
-Older @angular/cli references may grab angular version 15. To update to angular version 16 specifically for the global cli run:
-
-``` bash
-npm install -g @angular/cli@^16
-```
-
-## To build for development
-
-- **in a terminal window** -> npm start
-
-Voila! You can use your Angular + Tauri app in a local development environment with hot reload!
-
-The application code is managed by `src-tauri/main.rs`. \ 
-In this sample, the app runs with a simple Angular App (http://localhost:4200), and a webView managed by Tauri.
 
 ## Project structure
 
@@ -74,11 +45,40 @@ In this sample, the app runs with a simple Angular App (http://localhost:4200), 
 | src-tauri | Tauri main process folder (Rust)              |
 | src       | Tauri renderer process folder (Web / Angular) |
 
-## Browser mode
 
-Maybe you only want to execute the application in the browser with hot reload? Just run `npm run web:serve`.
+## Running locally
 
-## Included Commands
+Clone the project
+
+```bash
+  git clone https://github.com/ViniciusGomesBrandao/byte-forge.git
+```
+
+Enter the project directory
+
+```bash
+  cd byte-forge
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+**Run web development environment**
+
+```bash
+  npm run web:serve
+```
+
+**Run native development environment**
+
+```bash
+  npm run tauri:server
+```
+
+## Run Commands
 
 | Command                 | Description                                                                                           |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
@@ -88,21 +88,69 @@ Maybe you only want to execute the application in the browser with hot reload? J
 | `npm run tauri:server`  | Execute the app in native software (DEV mode) |
 
 **Your application is optimised. Only /dist folder is included in the final bundle.**
+## Running the tests
 
-## Branch & Packages version
+To run the tests, run the following command
 
-[maintained-badge]: https://img.shields.io/badge/maintained-yes-brightgreen
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: https://github.com/maximegris/angular-tauri/blob/main/LICENSE.md
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-red.svg
-[prs]: http://makeapullrequest.com
+```bash
+  npm run test
+```
+## Build
 
-[tauri-build-badge]: https://github.com/maximegris/angular-tauri/workflows/Tauri%20Build/badge.svg
-[tauri-build]: https://github.com/maximegris/angular-tauri/actions?query=workflow%3A%22Tauri+Build%22
+To build this project, run
 
-[github-watch-badge]: https://img.shields.io/github/watchers/maximegris/angular-tauri.svg?style=social
-[github-watch]: https://github.com/maximegris/angular-tauri/watchers
-[github-star-badge]: https://img.shields.io/github/stars/maximegris/angular-tauri.svg?style=social
-[github-star]: https://github.com/maximegris/angular-tauri/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-tauri!%20https://github.com/maximegris/angular-tauri%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/maximegris/angular-tauri.svg?style=social
+```bash
+  npm run tauri:bundle
+```
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Stack used
+
+**UI:** Angular
+
+**Native** Tauri, Rust
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Support
+
+For support, email mobley.byteforge@gmail.com or join our Slack channel.
+## Feedback
+
+If you have any feedback, please let us know at mobley.byteforge@gmail.com
+
+
+## Authors
+
+- [@ViniciusGomesBrandao](https://github.com/ViniciusGomesBrandao)
+
+
+## Reference
+
+ - [Tauri](https://tauri.app/v1/guides/)
+ - [Angular](https://angular.dev/overview)
+ 
+
+
+#
+# Hello, I'm Vinicius! 👋
+
+
+## 🚀 About me
+Full Stack Developer with experience in web, mobile, and native development. Passionate about information security and committed to delivering high-quality, secure solutions.
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![instagram](https://img.shields.io/badge/instagram-1DA1F2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/)
+
